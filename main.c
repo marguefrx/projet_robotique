@@ -15,6 +15,13 @@
 #include <pi_regulator.h>
 #include <process_image.h>
 
+void hellohugo(void){
+	 while (1) {
+    	//waits 1 second
+        chThdSleepMilliseconds(1000);
+    }
+}
+
 void SendUint8ToComputer(uint8_t* data, uint16_t size) 
 {
 	chSequentialStreamWrite((BaseSequentialStream *)&SD3, (uint8_t*)"START", 5);
