@@ -10,6 +10,8 @@
 #include <pi_regulator.h>
 #include <process_image.h>
 
+#include <test.h>
+
 int16_t pi_regulator(float distance, float goal)
 {
     float error = 0;
