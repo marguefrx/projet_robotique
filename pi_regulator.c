@@ -12,8 +12,10 @@
 
 #include <test.h>
 
+
 int16_t pi_regulator(float distance, float goal)
 {
+    float test_variable = 0;
     float error = 0;
     float speed = 0;
 
