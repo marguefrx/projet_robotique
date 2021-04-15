@@ -11,6 +11,8 @@
 #include <process_image.h>
 
 #include <test.h>
+#include chThdSleepUntilWindowed
+
 
 
 int16_t pi_regulator(float distance, float goal)
