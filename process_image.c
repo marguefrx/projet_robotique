@@ -8,7 +8,7 @@
 
 #include <process_image.h>
 
-
+static float find_me = 0;
 static float distance_cm = 0;
 
 static uint16_t line_position = IMAGE_BUFFER_SIZE/2;	
@@ -165,6 +165,10 @@ float get_distance_cm(void){
 
 uint16_t get_line_position(void){
 	return line_position;
+}
+
+float get_find_me(void){
+	return find_me;
 }
 
 void process_image_start(void){
